@@ -14,6 +14,22 @@ const routes: Routes = [
   {
     path: 'child-two',
     loadChildren: () => import('../child-two/child-two.module').then(m => m.ChildTwoPageModule)
+  },
+  {
+    path: 'child-three',
+    loadChildren: () => import('../child-three/child-three.module').then(m => m.ChildThreePageModule)
+  },
+  {
+    path: 'child-four',
+    loadChildren: () => import('../child-four/child-four.module').then(m => m.ChildFourPageModule)
+  },
+  {
+    path: 'child-five',
+    loadChildren: () => import('../child-five/child-five.module').then(m => m.ChildFivePageModule)
+  },
+  {
+    path: 'child-six',
+    loadChildren: () => import('../child-six/child-six.module').then(m => m.ChildSixPageModule)
   }
 ];
 
